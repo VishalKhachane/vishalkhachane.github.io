@@ -29,13 +29,13 @@ const About = () => {
                       </svg>
                     </div>
                     <div className="overflow-hidden flex-1 min-w-0">
-                      <p className="text-xs md:text-sm font-semibold text-grey mb-1">{item.label}</p>
+                      <p className="text-sm font-semibold text-grey mb-1">{item.label}</p>
                       {item.link ? (
-                        <a href={item.link} target={item.link.startsWith('http') ? "_blank" : "_self"} rel="noopener noreferrer" className="text-midnight_text dark:text-white font-bold block text-[10px] sm:text-[12px] lg:text-[13px] xl:text-[14px] break-all hover:text-primary transition-colors" title={item.value}>
+                        <a href={item.link} target={item.link.startsWith('http') ? "_blank" : "_self"} rel="noopener noreferrer" className="text-midnight_text dark:text-white font-bold block text-[13px] sm:text-[14px] lg:text-[15px] xl:text-[16px] break-all hover:text-primary transition-colors" title={item.value}>
                           {item.value}
                         </a>
                       ) : (
-                        <p className="text-midnight_text dark:text-white font-bold block text-[11px] sm:text-[13px] lg:text-[14px] xl:text-[15px] break-all" title={item.value}>
+                        <p className="text-midnight_text dark:text-white font-bold block text-[14px] sm:text-[15px] lg:text-[16px] xl:text-[17px] break-all" title={item.value}>
                           {item.value}
                         </p>
                       )}
