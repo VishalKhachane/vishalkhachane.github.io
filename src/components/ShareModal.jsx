@@ -11,7 +11,7 @@ const ShareModal = ({ isOpen, onClose }) => {
   const shareText = `Check out the portfolio of ${personalInfo.name} - Full Stack .NET Developer!`;
 
   const shareLinks = {
-    whatsapp: `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + '\n\n' + currentUrl)}`,
+    whatsapp: `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText + '\n\n' + currentUrl + '?ref=whatsapp')}`,
     linkedin: `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(currentUrl)}`,
     email: `mailto:?subject=${encodeURIComponent(personalInfo.name + ' Portfolio')}&body=${encodeURIComponent(shareText + '\n\n' + currentUrl)}`
   };

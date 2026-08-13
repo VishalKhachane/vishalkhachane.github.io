@@ -10,7 +10,7 @@ const Footer = () => {
         
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-12">
           
-          <Logo forceDark={true} />
+          <Logo />
           
           <div className="flex gap-4">
             <a href={personalInfo.socials.linkedin} target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white hover:scale-110 transition-all">
