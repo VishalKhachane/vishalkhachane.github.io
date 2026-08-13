@@ -17,7 +17,8 @@ const ShareModal = ({ isOpen, onClose }) => {
   };
 
   const handleCopy = () => {
-    navigator.clipboard.writeText(currentUrl);
+    const fullTextToCopy = `${shareText} - ${currentUrl}`;
+    navigator.clipboard.writeText(fullTextToCopy);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -74,6 +75,28 @@ const ShareModal = ({ isOpen, onClose }) => {
                 </div>
               </div>
             </div>
+          </div>
+
+          {/* Share Text Preview */}
+          <div className="bg-gray-50 dark:bg-gray-800/80 border border-gray-200 dark:border-gray-700 rounded-xl p-4 mb-8 relative group shadow-inner">
+            <div className="flex justify-between items-center mb-2">
+              <span className="text-[10px] text-gray-500 dark:text-gray-400 font-bold uppercase tracking-widest">Message Preview</span>
+              <span className="text-[10px] text-primary/80 font-medium bg-primary/10 px-2 py-0.5 rounded-full">Auto-generated</span>
+            </div>
+            <p className="text-gray-700 dark:text-gray-300 text-sm font-medium leading-relaxed italic">
+              "{shareText} - <span className="text-primary hover:underline cursor-pointer">{currentUrl}</span>"
+            </p>
+            <button 
+              onClick={handleCopy}
+              className="absolute top-4 right-4 p-1.5 bg-white dark:bg-gray-700 rounded-md shadow-sm border border-gray-100 dark:border-gray-600 opacity-0 group-hover:opacity-100 transition-all hover:scale-105 hover:text-primary text-gray-500"
+              title="Copy exact message"
+            >
+              {copied ? (
+                <svg className="w-4 h-4 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+              ) : (
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+              )}
+            </button>
           </div>
 
           {/* Share Actions */}
