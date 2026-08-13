@@ -32,8 +32,8 @@ export const portfolioData = {
     },
     heroDescription: `${calculateExperience()} years of experience crafting enterprise web applications with C#, ASP.NET Core, Angular, React, Docker and cloud-native solutions.`,
     about: [
-      `Results-driven Full Stack Developer with ${calculateExperience()} years of hands-on experience in designing, developing, and maintaining enterprise-level web applications using C#, ASP.NET, .NET Core, and the Microsoft technology stack. Proficient in ASP.NET Core MVC, RESTful APIs, and modern web development frameworks. Demonstrated expertise in HTML5, CSS3, JavaScript, jQuery, AJAX, Bootstrap, Angular 14+, and React Js for responsive UI/UX design.`,
-      "Skilled in SQL Server for database development, optimization, and performance tuning. Proven ability to integrate AI technologies such as OpenAI API and Google Gemini API into scalable applications."
+      `Results-driven <strong>Full Stack Developer</strong> with <strong>${calculateExperience()} years</strong> of hands-on experience in designing, developing, and maintaining enterprise-level web applications using <strong>C#, ASP.NET, .NET Core, and the Microsoft technology stack</strong>. Proficient in <strong>ASP.NET Core MVC, RESTful APIs</strong>, and modern web development frameworks. Demonstrated expertise in <strong>HTML5, CSS3, JavaScript, jQuery, AJAX, Bootstrap, Angular 14+, and React Js</strong> for responsive UI/UX design.`,
+      `Skilled in <strong>SQL Server</strong> for database development, optimization, and performance tuning. Proven ability to integrate AI technologies such as <strong>OpenAI API and Google Gemini API</strong> into scalable applications.`
     ]
   },
   stats: [

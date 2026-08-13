@@ -55,9 +55,9 @@ const About = () => {
               </h2>
             </div>
             
-            <div className="space-y-4 text-black font-bold dark:text-white text-lg leading-relaxed">
+            <div className="space-y-4 text-black dark:text-white text-lg leading-relaxed">
               {personalInfo.about.map((paragraph, idx) => (
-                <p key={idx}>{paragraph}</p>
+                <p key={idx} dangerouslySetInnerHTML={{ __html: paragraph }}></p>
               ))}
             </div>
             

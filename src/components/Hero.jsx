@@ -60,19 +60,19 @@ const Hero = () => {
             </div>
             
             {/* Decorative Elements */}
-            <div className="absolute -top-6 -right-6 w-16 h-16 bg-white dark:bg-darklight rounded-2xl shadow-xl flex items-center justify-center p-3 animate-[bounce_4s_infinite]">
+            <div className="absolute -top-6 -right-6 w-16 h-16 bg-white dark:bg-darklight rounded-2xl shadow-xl flex items-center justify-center p-3 animate-[float_4s_ease-in-out_infinite]">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" className="w-full h-full object-contain" />
             </div>
-            <div className="absolute bottom-10 -left-8 w-14 h-14 bg-white dark:bg-darklight rounded-2xl shadow-xl flex items-center justify-center p-3 animate-[bounce_5s_infinite_0.5s]">
+            <div className="absolute bottom-10 -left-8 w-14 h-14 bg-white dark:bg-darklight rounded-2xl shadow-xl flex items-center justify-center p-3 animate-[float_5s_ease-in-out_0.5s_infinite]">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" className="w-full h-full object-contain" />
             </div>
-            <div className="absolute top-1/2 -right-10 w-12 h-12 bg-white dark:bg-darklight rounded-2xl shadow-xl flex items-center justify-center p-2.5 animate-[bounce_6s_infinite_1s]">
+            <div className="absolute top-1/2 -right-10 w-12 h-12 bg-white dark:bg-darklight rounded-2xl shadow-xl flex items-center justify-center p-2.5 animate-[float_6s_ease-in-out_1s_infinite]">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg" alt="Angular" className="w-full h-full object-contain" />
             </div>
-            <div className="absolute -top-4 left-1/4 w-12 h-12 bg-white dark:bg-darklight rounded-2xl shadow-xl flex items-center justify-center p-2 animate-[bounce_4.5s_infinite_0.2s]">
+            <div className="absolute -top-4 left-1/4 w-12 h-12 bg-white dark:bg-darklight rounded-2xl shadow-xl flex items-center justify-center p-2 animate-[float_4.5s_ease-in-out_0.2s_infinite]">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dot-net/dot-net-original.svg" alt=".NET" className="w-full h-full object-contain" />
             </div>
-            <div className="absolute bottom-0 right-4 w-12 h-12 bg-white dark:bg-darklight rounded-2xl shadow-xl flex items-center justify-center p-2.5 animate-[bounce_5.5s_infinite_0.8s]">
+            <div className="absolute bottom-0 right-4 w-12 h-12 bg-white dark:bg-darklight rounded-2xl shadow-xl flex items-center justify-center p-2.5 animate-[float_5.5s_ease-in-out_0.8s_infinite]">
               <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-original.svg" alt="SQL Server" className="w-full h-full object-contain" />
             </div>
           </div>
