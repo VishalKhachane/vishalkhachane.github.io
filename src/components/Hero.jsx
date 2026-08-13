@@ -16,11 +16,8 @@ const Hero = () => {
           </div>
           
           <h1 className="text-gray-900 dark:text-white font-extrabold text-4xl sm:text-5xl md:text-[3.5rem] leading-tight tracking-tight">
-            Hi, I'm <span className="text-primary relative inline-block">
+            Hi, I'm <span className="text-primary">
               Vishal Khachane
-              <svg className="absolute w-full h-3 -bottom-1 left-0 text-SkyBlueMist -z-10" viewBox="0 0 100 10" preserveAspectRatio="none">
-                <path d="M0 5 Q 50 10 100 5" stroke="currentColor" strokeWidth="4" fill="transparent"/>
-              </svg>
             </span>
             <br />
             Full Stack <span className="text-primary">.NET</span> Developer
