@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  @apply overflow-x-hidden bg-section dark:bg-darkmode text-midnight_text dark:text-white font-sans;
+}
+
+@layer base {
+  section {
+    @apply py-16;
+  }
+}
+
+.margin_top {
+  @apply md:mt-[6.25rem] mt-0;
+}
+
+/* Slick Slider */
+.slick-slide,
+.portfolio_slide {
+  @apply focus-visible:outline-0;
+}
+.slick-dots li.slick-active button:before {
+  @apply opacity-100 text-primary w-4 h-4;
+}
+.slick-dots li button:before {
+  @apply text-base text-[#BBC8D5] opacity-100;
+}
